@@ -1,0 +1,296 @@
+#BoardView {
+  height: 80%;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+#BoardView .view-wrap {
+  border: 1px solid #dbdee3;
+  height: 90%;
+}
+
+#BoardView .view-wrap > div {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #dbdee3;
+}
+
+#BoardView .view-wrap .title {
+  align-items: center;
+  height: 5%;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+#BoardView .view-wrap .title > input {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
+
+#BoardView .view-wrap .content > textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+
+#BoardView .view-wrap .userInfo {
+  height: 3%;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#BoardView .view-wrap .userInfo > div {
+  margin-right: 10px;
+}
+
+/* 댓글 */
+#BoardView .view-wrap .content {
+  padding: 20px;
+  border: none;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#BoardView .view-wrap .content .comment {
+  height: 150px;
+  width: 100%;
+}
+
+#BoardView .view-wrap .content .comment > div {
+  display: flex;
+  width: 100%;
+}
+
+#BoardView .view-wrap .content .comment .comment-user {
+  border-top: 1px solid #dbdee3;
+  height: 20%;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 2px solid rgb(85, 26, 139);
+}
+
+#BoardView .view-wrap .content .comment .comment-user .comment-input {
+  width: 92%;
+  height: 40px;
+}
+
+#BoardView .view-wrap .content .comment .comment-user .comment-input > input {
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-user
+  .comment-input
+  > input:focus {
+  outline: none;
+}
+
+#BoardView .view-wrap .content .comment .comment-user > div:nth-child(3) {
+  padding: 10px;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  border-radius: 5px;
+  background: rgb(85, 26, 139);
+  color: #fff;
+  cursor: pointer;
+}
+
+#BoardView .view-wrap .content .comment .comment-list {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#BoardView .view-wrap .content .comment .comment-list > div {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+
+#BoardView .view-wrap .content .comment .comment-user > div:nth-child(1),
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  .comment-info
+  div:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 10px 0 10px;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  .comment-info
+  div:nth-child(2) {
+  font-size: 12px;
+}
+
+#BoardView .view-wrap .content .comment .comment-list > div .comment-info {
+  display: flex;
+  width: 100%;
+}
+
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  .comment-info
+  > input {
+  border: none;
+  border-bottom: 1px solid black;
+  height: 30px;
+  width: 100%;
+  min-width: 200px;
+}
+
+/* 댓글 수정 삭제 버튼 */
+#BoardView .view-wrap .content .comment .comment-list > div > .comment-btn {
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  > .comment-btn
+  .complete {
+  display: flex;
+}
+
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  > .comment-btn
+  .change,
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  > .comment-btn
+  .complete
+  > div {
+  padding: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  display: flex;
+}
+
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  > .comment-btn
+  .change:hover,
+#BoardView
+  .view-wrap
+  .content
+  .comment
+  .comment-list
+  > div
+  > .comment-btn
+  .complete
+  > div:hover {
+  color: rgb(85, 26, 139);
+}
+
+/* 버튼 */
+
+#BoardView .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+}
+
+#BoardView .btn-wrap .delete,
+#BoardView .btn-wrap > div .fix,
+#BoardView .btn-wrap > div .complete {
+  width: 200px;
+  height: 50px;
+  background: #dbdee3;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(85, 26, 139);
+}
+
+#BoardView .btn-wrap .delete > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#BoardView .btn-wrap > div .fix:hover,
+#BoardView .btn-wrap > div .complete:hover,
+#BoardView .btn-wrap .delete > a:hover {
+  border: 1px solid #dbdee3;
+  background: #f8f9fa;
+  color: lightslategray;
+}
+
+.active {
+  display: none;
+}
+
+#BoardView .login {
+  justify-content: flex-end;
+}

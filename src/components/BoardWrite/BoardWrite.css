@@ -1,0 +1,99 @@
+#BoardWrite {
+  height: 80%;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+#BoardWrite .view-wrap {
+  border: 1px solid #dbdee3;
+  height: 90%;
+}
+
+#BoardWrite .view-wrap > div {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #dbdee3;
+}
+
+#BoardWrite .view-wrap .title {
+  align-items: center;
+  height: 5%;
+}
+
+#BoardWrite .view-wrap .title > input {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  border: none;
+}
+
+#BoardWrite .view-wrap .userInfo {
+  height: 3%;
+  font-size: 12px;
+}
+
+#BoardWrite .view-wrap .userInfo > div {
+  margin-right: 10px;
+}
+
+#BoardWrite .view-wrap .content {
+  height: 80%;
+  padding: 20px;
+  border: none;
+}
+
+#BoardWrite .view-wrap .content > textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  border: none;
+}
+
+#BoardWrite .view-wrap .title > input:focus,
+#BoardWrite .view-wrap .content > textarea:focus {
+  outline: none;
+}
+
+#BoardWrite .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+}
+
+#BoardWrite .btn-wrap > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background: #dbdee3;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+}
+
+#BoardWrite .btn-wrap > div > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#BoardWrite .btn-wrap > div:hover {
+  border: 1px solid #dbdee3;
+  background: #f8f9fa;
+  color: lightslategray;
+}
+
+#BoardWrite .btn-wrap .delete {
+  border: 1px solid #dbdee3;
+  background: #f8f9fa;
+  color: lightslategray;
+}

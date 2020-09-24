@@ -1,0 +1,89 @@
+#BoardList {
+  height: 80%;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+#BoardList .board-wrap {
+  height: 90%;
+}
+
+#BoardList .board-wrap .content-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  background: #f8f9fa;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
+  border-bottom: 1px solid #dbdee3;
+}
+
+#BoardList .board-wrap .content-title > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#BoardList .board-wrap .content-wrap > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+  font-size: 15px;
+  color: #777;
+  border-bottom: 1px solid #dbdee3;
+}
+
+#BoardList .board-wrap .content-wrap > a > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+}
+
+#BoardList .board-page {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#BoardList .board-page .page-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#BoardList .board-page .page-number > div {
+  /* border: 1px solid rgb(85, 26, 139); */
+  /* border: 1px solid #dbdee3; */
+  background: lightslategray;
+  color: #dbdee3;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* #BoardList .board-page .page-number > div:nth-child(2) {
+  background: #f8f9fa;
+  color: lightslategray;
+  font-weight: 600;
+  box-shadow: 1px 1px 1px 1px #999 inset;
+} */

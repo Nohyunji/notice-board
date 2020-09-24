@@ -1,0 +1,46 @@
+#Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#Header .title {
+  display: flex;
+  align-items: center;
+}
+
+#Header .title > div:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #495057;
+  margin-left: 20px;
+}
+
+#Header .title > div:nth-child(2) {
+  font-size: 25px;
+  color: #6c7591;
+  margin-left: 5px;
+}
+
+#Header > a {
+  text-decoration: none;
+}
+
+#Header > a > .write {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background: #dbdee3;
+  color: #495057;
+  width: 100px;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 15px;
+}
