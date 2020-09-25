@@ -26,7 +26,7 @@ let BoardList = (props) => {
         console.log(err);
       }
     })();
-  }, [pageList]);
+  }, [pageList, props.BoardList.list]);
 
   const onPageNumber = (e) => {
     setPageList({ page: Number(e.target.innerHTML) });

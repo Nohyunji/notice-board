@@ -2,8 +2,6 @@ import axios from "axios";
 
 //List 요청
 export const getBoardList = async (page, list) => {
-  console.log(page, list);
-
   let result = await axios({
     method: "GET",
     url: `http://localhost:8000/list?page=${page}&list=${list}`,
